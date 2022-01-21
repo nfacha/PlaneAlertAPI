@@ -1,10 +1,6 @@
 {
-  "trackSource": "OPSN",
-  "takeoffAltitudeThreshold": 10000,
-  "landingAltitudeThreshold": 10000,
-  "landingSignalLostThreshold": 5,
-  "landingNearestSuitableAirportDistance": 5,
-  "databaseName": "planealert",
+  "databaseHost": "localhost",
+  "databaseName": "planeaalert",
   "databaseUsername": "postgres",
   "databasePassword": "123456789"
 }
