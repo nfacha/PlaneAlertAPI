@@ -1,0 +1,25 @@
+{
+  "name": "planealertapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node build/PlaneAlertAPI.js",
+    "dev": "tsc && node build/PlaneAlertAPI.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.10",
+    "axios": "^0.25.0",
+    "express": "^4.17.2",
+    "pg": "^8.7.1",
+    "ts-node": "^10.4.0",
+    "tslog": "^3.3.1",
+    "typeorm": "^0.2.41",
+    "typescript": "^4.5.5"
+  }
+}
