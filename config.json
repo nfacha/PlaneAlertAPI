@@ -1,6 +1,0 @@
-{
-  "databaseHost": "localhost",
-  "databaseName": "planealert",
-  "databaseUsername": "postgres",
-  "databasePassword": "123456789"
-}

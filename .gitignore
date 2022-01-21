@@ -4,3 +4,5 @@ build/*.js
 build/*/*.js
 pg.env
 pgadmin.env
+
+config.json
