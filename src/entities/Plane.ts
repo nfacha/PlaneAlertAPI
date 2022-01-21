@@ -62,8 +62,8 @@ export class Plane extends BaseEntity {
             last_seen: this.last_seen,
             on_ground: this.on_ground,
             live_track: this.live_track,
-            last_lat: this.last_lat,
-            last_lng: this.last_lng,
+            last_lat: this.last_lat !== null ? this.last_lat / 1E6 : null,
+            last_lng: this.last_lng !== null ? this.last_lng / 1E6 : null,
         };
     }
 
