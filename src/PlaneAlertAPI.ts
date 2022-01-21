@@ -5,6 +5,7 @@ import {Flight} from "./entities/Flight";
 import express from 'express';
 import {ListTrackedPlanesAction} from "./actions/ListTrackedPlanesAction";
 import fs from "fs";
+import {PlaneDetailsAction} from "./actions/PlaneDetailsAction";
 
 
 class PlaneAlertMain {
@@ -55,7 +56,8 @@ class PlaneAlertMain {
     }
 
     private setupRoutes() {
-        this.app.get('/planes', ListTrackedPlanesAction.getRequest);
+        this.app.get('/plane', ListTrackedPlanesAction.getRequest);
+        this.app.get('/plane/:id', PlaneDetailsAction.byId);
     }
 }
 

@@ -48,4 +48,23 @@ export class Plane extends BaseEntity {
     @Column({type: "text", nullable: true})
     discord_webhook!: string;
 
+    public getApiObject() {
+        return {
+            id: this.id,
+            name: this.name,
+            icao: this.icao,
+            registration: this.registration,
+            active: this.active,
+            allowed_airports: this.allowed_airports.split(','),
+            refresh_interval: this.refresh_interval,
+            last_refresh: this.last_refresh,
+            next_refresh: this.next_refresh,
+            last_seen: this.last_seen,
+            on_ground: this.on_ground,
+            live_track: this.live_track,
+            last_lat: this.last_lat,
+            last_lng: this.last_lng,
+        };
+    }
+
 }
