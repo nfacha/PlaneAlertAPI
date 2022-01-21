@@ -56,7 +56,9 @@ class PlaneAlertMain {
     }
 
     private setupRoutes() {
-        this.app.get('/plane', ListTrackedPlanesAction.getRequest);
+        this.app.get('/plane', ListTrackedPlanesAction.all);
+        this.app.get('/plane/live', ListTrackedPlanesAction.live);
+        this.app.get('/plane/live/airborne', ListTrackedPlanesAction.airborne);
         this.app.get('/plane/:id', PlaneDetailsAction.byId);
     }
 }
