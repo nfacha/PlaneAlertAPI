@@ -45,6 +45,9 @@ export class Plane extends BaseEntity {
     @Column({type: "integer", nullable: true})
     last_lng!: number | null;
 
+    @Column({type: "integer", nullable: true})
+    last_altitude!: number | null;
+
     @Column({type: "text", nullable: true})
     discord_webhook!: string;
 
@@ -64,6 +67,7 @@ export class Plane extends BaseEntity {
             live_track: this.live_track,
             last_lat: this.last_lat !== null ? this.last_lat / 1E6 : null,
             last_lng: this.last_lng !== null ? this.last_lng / 1E6 : null,
+            last_altitude: this.last_altitude,
         };
     }
 
